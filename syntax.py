@@ -5,8 +5,11 @@
 
 # 1. Declare três variáveis (nome, idade, altura) com seus tipos corretos 
 # e imprima formatado usando f-strings.
+nome = 'Sonserino'
+idade = 33
+altura = 1.78
 
-
+f'{nome} tem {idade} anos, {altura} de altura e está cansado.'
 # 2. Peça dois números ao usuário e exiba a soma, subtração, multiplicação, 
 # divisão real, divisão inteira e o resto da divisão.
 
