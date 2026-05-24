@@ -2,7 +2,7 @@
 # Bloco 1: O "Feijão com Arroz" (Variáveis, Operadores e Condicionais)
 # Para aquecer os braços e calibrar a sintaxe básica.
 # ==============================================================================
-"""
+
 # 1. Declare três variáveis (nome, idade, altura) com seus tipos corretos 
 # e imprima formatado usando f-strings.
 nome = 'Sonserino'
@@ -10,21 +10,46 @@ idade = 33
 altura = 1.78
 
 print(f'{nome} tem {idade} anos, {altura} de altura e está cansado.')
+
 # 2. Peça dois números ao usuário e exiba a soma, subtração, multiplicação, 
 # divisão real, divisão inteira e o resto da divisão.
 a = int(input('Digite um número: \n'))
 b = int(input('Digite outro número: \n'))
 print(f'Soma: {a + b} \n Subtração: {a - b}  \n Multiplicação: {a * b} \n Divisão Real: {a / b} \n Divisão Inteira: {a // b} \n Resto da Divisão: {a % b}')
+
 # 3. Receba um número inteiro e diga se ele é par ou ímpar (sem usar funções).
-"""
+
 num_int = int(input('Digite um número e descubra se ele é par ou ímpar: \n'))
+
+if num_int % 2 == 0:
+    print('Este é um número par.')
+else:
+    print('Este é um número ímpar.')
 
 # 4. Receba três notas, calcule a média aritmética e exiba se o aluno foi 
 # Aprovado (>= 7), Recuperação (5 a 6.9) ou Reprovado (< 5).
+nota1 = float(input('Digite a primeira nota recebida: '))
+nota2 = float(input('Digite a segunda nota recebida: '))
+nota3 = float(input('Digite a terceira nota recebida: '))
+media = (nota1 + nota2 + nota3) / 3
 
+if media >= 7:
+    print(f'Aluno aprovado com média final {media:20.2f}')
+elif media < 5:
+    print(f'Aluno em reprovado com média final {media:20.2f}')
+else:
+    print(f'Aluno em recuperação com média final {media:20.2f}')
 
 # 5. Receba um ano e determine se ele é bissexto (regrinha matemática do 
 # divisor de 4, 100 e 400).
+ano = int(input('Digite um ano para verificar se é ano bissexto: '))
+
+if ano % 4 == 0:
+    print(f'{ano} é um ano bissexto.')
+elif ano % 400 == 0:
+    print(f'{ano} é um ano bissexto.')
+elif ano % 100 != 0:
+    print(f'{ano} não é um ano bissexto.')
 
 
 # 6. Peça um valor em metros e exiba-o convertido em centímetros e milímetros.
