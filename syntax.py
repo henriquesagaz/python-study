@@ -2,20 +2,22 @@
 # Bloco 1: O "Feijão com Arroz" (Variáveis, Operadores e Condicionais)
 # Para aquecer os braços e calibrar a sintaxe básica.
 # ==============================================================================
-
+"""
 # 1. Declare três variáveis (nome, idade, altura) com seus tipos corretos 
 # e imprima formatado usando f-strings.
 nome = 'Sonserino'
 idade = 33
 altura = 1.78
 
-f'{nome} tem {idade} anos, {altura} de altura e está cansado.'
+print(f'{nome} tem {idade} anos, {altura} de altura e está cansado.')
 # 2. Peça dois números ao usuário e exiba a soma, subtração, multiplicação, 
 # divisão real, divisão inteira e o resto da divisão.
-
-
+a = int(input('Digite um número: \n'))
+b = int(input('Digite outro número: \n'))
+print(f'Soma: {a + b} \n Subtração: {a - b}  \n Multiplicação: {a * b} \n Divisão Real: {a / b} \n Divisão Inteira: {a // b} \n Resto da Divisão: {a % b}')
 # 3. Receba um número inteiro e diga se ele é par ou ímpar (sem usar funções).
-
+"""
+num_int = int(input('Digite um número e descubra se ele é par ou ímpar: \n'))
 
 # 4. Receba três notas, calcule a média aritmética e exiba se o aluno foi 
 # Aprovado (>= 7), Recuperação (5 a 6.9) ou Reprovado (< 5).
