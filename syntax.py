@@ -53,7 +53,11 @@ elif ano % 100 != 0:
 
 
 # 6. Peça um valor em metros e exiba-o convertido em centímetros e milímetros.
+valor_m = float(input('Digite o tamanho em metros: '))
+valor_cm = valor_m / 100
+valor_mm = valor_m / 1000
 
+print(f'{valor_m} metros equivale a {valor_cm} centímetros ou {valor_mm} milímetros.')
 
 # 7. Escreva um programa que receba a velocidade de um carro. Se ultrapassar 
 # 80 km/h, exiba que ele foi multado e o valor da multa (R$ 7,00 por cada km 
