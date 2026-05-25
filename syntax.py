@@ -1,4 +1,4 @@
-# ==============================================================================
+"""# ==============================================================================
 # Bloco 1: O "Feijão com Arroz" (Variáveis, Operadores e Condicionais)
 # Para aquecer os braços e calibrar a sintaxe básica.
 # ==============================================================================
@@ -51,19 +51,22 @@ elif ano % 400 == 0:
 elif ano % 100 != 0:
     print(f'{ano} não é um ano bissexto.')
 
-
 # 6. Peça um valor em metros e exiba-o convertido em centímetros e milímetros.
 valor_m = float(input('Digite o tamanho em metros: '))
 valor_cm = valor_m / 100
 valor_mm = valor_m / 1000
 
 print(f'{valor_m} metros equivale a {valor_cm} centímetros ou {valor_mm} milímetros.')
-
+"""
 # 7. Escreva um programa que receba a velocidade de um carro. Se ultrapassar 
 # 80 km/h, exiba que ele foi multado e o valor da multa (R$ 7,00 por cada km 
 # acima do limite).
-
-
+velocidade = int(input('Velocidade: '))
+multa = (velocidade - 80) * 7
+if velocidade > 80:
+  print(f'Radar: Você ultrapassou o limite de velocidade ({velocidade}km/h). \n Uma multa de R${multa} foi registrada ao veículo.')
+else:
+  print(f'Radar: Velocidade registrada {velocidade} km/h.')
 # 8. Receba o salário de um funcionário e calcule o reajuste: salários até 
 # R$ 1.500,00 ganham 15%; acima disso, ganham 10%.
 
